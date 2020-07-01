@@ -1,0 +1,68 @@
+<!-- <style>
+  table,
+  td,
+  th {
+    border: 1px solid black;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  th {
+    height: 50px;
+  }
+</style> -->
+
+<!-- <table>
+  <tr>
+    <th>Id</th>
+    <th>Post Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+
+  <tr *ngFor="let com of lstcomments">
+    <td>{{ com.id }}</td>
+    <td>{{ com.postId }}</td>
+    <td>{{ com.name }}</td>
+    <td>{{ com.email }}</td>
+    <td>{{ com.body }}</td>
+  </tr>
+</table> -->
+
+<!-- {{ url }} -->
+
+
+<ul class="nav bg-dark">
+    <li class="nav-item">
+      <a style="color: white;" class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a style="color: white;" class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a style="color: white;" class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a style="color: white;" class="nav-link " href="#" tabindex="-1" aria-disabled="true">Link</a>
+    </li>
+  </ul>
+
+
+ <label for="country">City</label>
+  <select  [(ngModel)]="selectedValue" (change)="onChange($event.target.value)"  name="country" id="country">
+    <option [value]="item.country_name" *ngFor= "let item of cities"  > {{item.country_name}} </option>
+
+  </select>
+
+
+   <ul>
+     <li *ngFor= "let item of states">
+      {{item.state_name}}
+
+     </li>
+
+
+   </ul>
